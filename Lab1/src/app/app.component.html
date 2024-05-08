@@ -1,0 +1,63 @@
+<!-- <div class="container">
+    <input type="text" name="name" [(ngModel)]='name' class="col-12 form-control">
+    <p class="alert alert-success">{{name}}</p>
+    <button class="btn btn-danger mb-2">Click me</button>
+</div> -->.
+<div class="container">
+    Bai 2
+    <div class="caption">
+        <h4>Thông tin sinh viên</h4>
+        <img src="assets/images/{{student.anh}}" alt="" width="150px" height="150px">
+    </div>
+    <ul>
+        <li><span>Họ tên:</span>{{student.hoten}}</li>
+        <li><span>Ngày sinh:</span>{{student.ngaysinh}}</li>
+        <li><span>Giới tính:</span>{{student.gioitinh}}</li>
+        <li><span>Điểm Trung Bình:</span>{{student.diemTB}}</li>
+    </ul>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Year</th>
+                <th scope="col">Passed</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of inventor">
+                <td>{{item.id}}</td>
+                <td>{{item.first}}</td>
+                <td>{{item.last}}</td>
+                <td>{{item.year}}</td>
+                <td>{{item.passed}}</td>
+            </tr>
+        </tbody>
+    </table>
+    Bai 4
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Image</th>
+                <th scope="col">Product</th>
+                <th scope="col">Code</th>
+                <th scope="col">Available</th>
+                <th scope="col">Price</th>
+                <th scope="col">5 Star Rating</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of products">
+                <td><img src="{{item.imageUrl}}" alt="" width="50px"></td>
+                <td>{{item.productName}}</td>
+                <td>{{item.productCode}}</td>
+                <td>{{item.releaseDate}}</td>
+                <td>{{item.price}}</td>
+                <td>{{item.starRating}}</td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
