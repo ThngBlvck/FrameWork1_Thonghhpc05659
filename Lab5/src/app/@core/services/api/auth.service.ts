@@ -18,7 +18,7 @@ export class AuthService {
   ) { }
   login(data: Ilogin):Observable<any>{
     return this._http.post("https://knowledgehub.demopolyct.online/api/auth/login",{
-      eamil: data.email,
+      email: data.email,
       password: data.password
     })
   }
